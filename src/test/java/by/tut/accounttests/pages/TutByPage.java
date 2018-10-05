@@ -11,5 +11,7 @@ public class TutByPage {
     private SelenideElement userIcon = $("a.enter");
     private SelenideElement loginField = $("input[name=login]");
     private SelenideElement passwordField = $("input[name=password]");
-    private SelenideElement submitButton = $("button auth__enter");
+    private SelenideElement submitButton = $(".button.auth__enter");
+    private SelenideElement authUserIcon = $(".uname");
+    private SelenideElement emailRow = $("ul[class=b-auth-navigation] :nth-child(2) a");
 }

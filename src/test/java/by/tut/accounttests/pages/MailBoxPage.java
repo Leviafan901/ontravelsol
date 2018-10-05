@@ -10,5 +10,5 @@ import static com.codeborne.selenide.Selenide.$;
 @Getter
 public class MailBoxPage {
 
-    private SelenideElement inboxMessagesCountText = $("b-messages__placeholder-item");
+    private SelenideElement inboxMessagesCountText = $(".b-messages__placeholder-item");
 }
