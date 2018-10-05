@@ -2,6 +2,7 @@ package by.tut.accounttests.service;
 
 import by.tut.accounttests.pages.TutByPage;
 import by.tut.accounttests.domain.UserAccount;
+import static com.codeborne.selenide.Selenide.open;
 
 public class TutByService extends AbstractService {
 
@@ -16,6 +17,6 @@ public class TutByService extends AbstractService {
 
     public void goToEmailBox() {
         clickElement(page.getAuthUserIcon());
-        clickElement(page.getEmailRow());
+        open(page.getEmailRow().getAttribute("href"));
     }
 }

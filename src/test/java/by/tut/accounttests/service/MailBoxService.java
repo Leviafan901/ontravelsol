@@ -2,14 +2,13 @@ package by.tut.accounttests.service;
 
 import by.tut.accounttests.pages.MailBoxPage;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.MatcherAssert.assertThat;
+import static com.codeborne.selenide.Condition.text;
 
 public class MailBoxService extends AbstractService {
 
     private MailBoxPage page = new MailBoxPage();
 
     public void checkNoInboxMails() {
-        assertThat(page.getInboxMessagesCountText().text(), equalTo("В папке «Входящие» нет писем."));
+        page.getInboxMessagesCountText().shouldHave(text("В папке «Входящие» нет писем."));
     }
 }

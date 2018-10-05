@@ -5,7 +5,6 @@ import by.tut.accounttests.exceptions.ParsingException;
 import com.opencsv.CSVReader;
 
 import java.io.*;
-import java.util.Optional;
 
 public class CsvParser {
 
